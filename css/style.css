@@ -558,6 +558,14 @@ video {
  * by plugins.
  */
 
+.flex {
+  display: flex;
+}
+
+.contents {
+  display: contents;
+}
+
 .bg-cyan-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(165 243 252 / var(--tw-bg-opacity));
