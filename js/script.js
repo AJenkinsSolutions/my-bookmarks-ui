@@ -1,11 +1,16 @@
 // Dynamiclly render our panel content when the tabs are selected
 const tabs = document.querySelectorAll('.tab');
 const panels = document.querySelectorAll('.panel');
+const btn = document.getElementById('menu-btn')
+const logo = document.getElementById('logo')
+const menu = document.getElementById('menu')
 
 
 // Tabs Event Listerner
 tabs.forEach((tab) => tab.addEventListener('click', onTabClick))
 
+// Hamburger button listener
+btn.addEventListener('click', navToggle)
 
 function onTabClick(e){
     //e .target refers to the the tab being clicked
@@ -40,5 +45,23 @@ function onTabClick(e){
 
 
     console.log("Debug: target "+ e.target.classList)
+
+}
+
+
+
+
+// Toggle Mobile Menu
+function navToggle() {
+    btn.classList.toggle('open')
+    menu.classList.toggle('flex')
+    menu.classList.toggle('hidden')
+
+    if(menu.classList.contains('flex')){
+        logo.setAttribute('src', '/images/logo-bookmark-footer.svg')
+    } else{
+        logo.setAttribute('src', '/images/logo-bookmark.svg')
+    }
+    
 
 }

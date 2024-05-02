@@ -29,16 +29,37 @@
              </div>
              <!-- menu items -->
              <div class="items-center hidden space-x-10 uppercase md:flex text-grayishBlue">
-                <a href="#features-section" class="tracking-widest hover:text-softRed">Features</a>
-                <a href="#download-section" class="tracking-widest hover:text-softRed">Download</a>
-                <a href="#faq-section" class="tracking-widest hover:text-softRed">faq</a>
+                <a href="#features" class="tracking-widest hover:text-softRed">Features</a>
+                <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
+                <a href="#faq" class="tracking-widest hover:text-softRed">faq</a>
                 
                 <a class="px-8 text-white border-2 rounded-lg shadow-md bg-softRed border-softRed hover:text-softRed hover:bg-white">Login</a>
              </div>
-        
-        
-            
+             <!-- hambuger button -->
+             <button type="button" id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+             </button>
         </div>
+
+        <!-- Mobile menu -->
+        <div class="fixed inset-0 z-20 flex-col items-center self-end hidden w-full h-full min-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 bg-very opacity-90 bg-veryDarkBlue" id="menu">
+            
+            <div class="w-full py-3 text-center">
+                <a href="#features" class="block hover:text-softRed">Features</a>
+            </div>
+            <div class="w-full py-3 text-center">
+                <a href="#download" class="block hover:text-softRed">Download</a>
+            </div>
+            <div class="w-full py-3 text-center">
+                <a href="#faq" class="block hover:text-softRed">FAQ</a>
+            </div>
+            <div class="w-full py-3 text-center">
+                <a href="#" class="block">Login</a>
+            </div>
+            
+         </div>
        
         
     </nav>
@@ -83,7 +104,7 @@
 
 
     <!-- features section -->
-    <section id="features-section">
+    <section id="features">
         <!-- features container -->
         <container class="px-6 mx-auto mt-16 md:mx-0">
 
@@ -216,7 +237,7 @@
     
 
     <!-- Downloads Section -->
-    <section id="downloads-section">
+    <section id="downloads">
         <!-- downloads container -->
         
         <div class="container px-6 mx-auto">
@@ -302,42 +323,6 @@
                     </p>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     
                     <!-- dots -->
                     <div class="px-6 pt-6 capitalize bg-repeat-x bg-dots">
@@ -352,14 +337,10 @@
             
         </div>
         
-       
-
-        
-        
     </section>    
 
     <!-- FAQ Section -->
-    <section id="faq-section">
+    <section id="faq">
         <!-- FAQ Container -->
          <div class="container mx-auto">
             <h1 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
