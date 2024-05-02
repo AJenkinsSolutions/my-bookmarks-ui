@@ -557,9 +557,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 480px;
+    max-width: 640px;
   }
 }
 
@@ -569,15 +569,21 @@ video {
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 976px;
+    max-width: 1024px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1440px;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
 
@@ -606,6 +612,22 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -730,6 +752,11 @@ video {
   padding: 1.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -742,6 +769,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -804,26 +836,31 @@ video {
 
 /* Media query  */
 
-using the screen size values we added to the input.css we can apply the class on this breakpoint
- @media screen(lg){
+/* using the screen size values we added to the input.css we can apply the class on this breakpoint */
+
+@media (min-width: 1024px){
   .bg-hero{
     width: 2000px;
     height: 300px;
-    left: 30%
-  }
-  .bg-hero {
+    left: 30%;
     position: absolute;
-  }
-  .bg-hero {
     top: 13rem;
-  }
-  .bg-hero {
     border-top-left-radius: 9999px;
     border-bottom-left-radius: 9999px;
-  }
-  .bg-hero {
     --tw-bg-opacity: 1;
-    background-color: hsl(231 69% 60% / var(--tw-bg-opacity));
+    background-color: hsl(231 69% 60% / var(--tw-bg-opacity))
+  }
+
+  .bg-tabs{
+    width: 200px;
+    height: 300px;
+    right: 60%;
+    position: absolute;
+    top: 15rem;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: hsl(231 69% 60% / var(--tw-bg-opacity))
   }
 }
 
@@ -848,6 +885,11 @@ using the screen size values we added to the input.css we can apply the class on
 }
 
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -858,7 +900,7 @@ using the screen size values we added to the input.css we can apply the class on
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .lg\:top-24 {
     top: 6rem;
   }
@@ -907,7 +949,7 @@ using the screen size values we added to the input.css we can apply the class on
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .xl\:top-0 {
     top: 0px;
   }
